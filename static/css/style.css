@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #111, #1f1f1f);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+.btn {
+    display: inline-block;
+    margin: 15px 10px;
+    padding: 15px 30px;
+    background: #ff2c2c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff5555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Всплывающее окно */
+.popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    z-index: 999;
+    max-width: 90%;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #ff2c2c;
+}
+
+.popup button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff2c2c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-btn:hover {
+    color: white;
+}

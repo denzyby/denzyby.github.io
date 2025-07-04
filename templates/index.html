@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Юджин Сагас и Unox Team — Выживи</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <h1>Юджин Сагас и Unox Team — Выживи</h1>
+    <p>Новый авторский комикс с участием Юджина Сагаса. Чистый угар и выживание!</p>
+    <a href="comics.html" class="btn">📖 Читать</a>
+    <a href="https://сайт-команды.рф" class="btn" target="_blank">🌐 Сайт команды Unox</a>
+    <a href="#about" class="btn">ℹ️ О проекте</a>
+  </header>
+
+  <!-- Всплывающее окно -->
+  <div class="popup" id="popup">
+    <span class="close-btn" onclick="closePopup()">✖</span>
+    <h2>🔥 Новый ролик уже на YouTube!</h2>
+    <p>Смотри, как Юджин Сагас борется за выживание вместе с Unox</p>
+    <button onclick="window.open('https://www.youtube.com/@denzybynew', '_blank')">▶ Смотреть</button>
+  </div>
+
+  <script>
+    // Показать всплывающее окно через 5 секунд
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById("popup").style.display = "block";
+      }, 5000);
+    };
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
